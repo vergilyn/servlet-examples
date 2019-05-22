@@ -1,0 +1,9 @@
+server:
+  # 貌似无法设置0，会被默认的值替换
+  tomcat:
+    max-connections: 5
+    accept-count: 1
+    max-threads: 5
+    min-spare-threads: 1
+  # connectionTimeout = keepAliveTimeout
+  connection-timeout: 2000ms
